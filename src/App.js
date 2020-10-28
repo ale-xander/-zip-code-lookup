@@ -44,7 +44,7 @@ class App extends Component {
 
   fetchItems = async (p) => {
     const parameter = p
-    const items_api = `http://stream-restaurant-menu-svc.herokuapp.com/item/?category=${parameter}`
+    const items_api = `https://stream-restaurant-menu-svc.herokuapp.com/item/?category=${parameter}`
     const response = await fetch(
       items_api,
       console.log(`******fetch made to ${items_api}`)
@@ -58,7 +58,7 @@ class App extends Component {
 
   fetchCategories = async () => {
     //console.log('fetching the categories');
-    const category_api = 'http://stream-restaurant-menu-svc.herokuapp.com/category';
+    const category_api = 'https://stream-restaurant-menu-svc.herokuapp.com/category';
     const response = await fetch(
       category_api,
       //console.log(`******fetch made to ${category_api}`)
